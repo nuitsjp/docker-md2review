@@ -1,0 +1,1 @@
+docker run --rm -v `pwd`/.:/work nuitsjp/md2review /bin/sh -c "cd /work && md2review README.md > README.re"

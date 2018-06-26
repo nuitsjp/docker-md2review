@@ -1,0 +1,1 @@
+sudo docker build -t nuitsjp/md2review:1.12.0 .
