@@ -28,7 +28,7 @@ $ docker pull nuitsjp/docker-md2review:1.12
 docker実行時のカレントディレクトリに存在する「README.md」を変換する想定です。
 
 ```
-docker run --rm -v `pwd`/.:/work nuitsjp/md2review:1.12.0 /bin/sh -c "cd /work && md2review README.md > README.re"
+docker run --rm -v `pwd`/.:/work nuitsjp/md2review /bin/sh -c "cd /work && md2review README.md > README.re"
 ```
 
 ### Windows
@@ -38,13 +38,13 @@ docker実行時のカレントディレクトリに存在する「README.md」�
 #### コマンドプロンプト
 
 ```
-docker run --rm -v %cd%:/work nuitsjp/md2review:1.12.0 /bin/sh -c "cd /work && md2review README.md > README.re"
+docker run --rm -v %cd%:/work nuitsjp/md2review /bin/sh -c "cd /work && md2review README.md > README.re"
 ```
 
 #### PowerShell
 
 ```
-docker run --rm -v ${pwd}/.:/work nuitsjp/md2review:1.12.0 /bin/sh -c "cd /work && md2review README.md > README.re"
+docker run --rm -v ${pwd}/.:/work nuitsjp/md2review /bin/sh -c "cd /work && md2review README.md > README.re"
 ```
 
 ### インストールされているコンポーネント
