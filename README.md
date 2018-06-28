@@ -1,4 +1,8 @@
 # docker-md2review
+[![Docker Build Statu](https://img.shields.io/docker/build/nuitsjp/docker-md2review.svg)](https://hub.docker.com/r/nuitsjp/docker-md2review/)
+[![Docker Automated buil](https://img.shields.io/docker/automated/nuitsjp/docker-md2review.svg)](https://hub.docker.com/r/nuitsjp/docker-md2review/)
+[![Docker Stars](https://img.shields.io/docker/stars/nuitsjp/docker-md2review.svg)](https://hub.docker.com/r/nuitsjp/docker-md2review/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/nuitsjp/docker-md2review.svg)](https://hub.docker.com/r/nuitsjp/docker-md2review/)
 
 このリポジトリは[Docker](https://www.docker.com/)上で[md2review](https://github.com/takahashim/md2review)を動かすためのものです。
 
