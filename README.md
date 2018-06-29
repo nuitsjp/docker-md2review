@@ -6,7 +6,7 @@
 
 このリポジトリは[Docker](https://www.docker.com/)上で[md2review](https://github.com/takahashim/md2review)を動かすためのものです。
 
-[Docker Hub](https://hub.docker.com/r/nuitsjp/docker-md2review/)に公開していますのでご活用ください。
+[Docker Hub](https://hub.docker.com/r/nuitsjp/md2review/)に公開していますのでご活用ください。
 
 ## 仕様
 
