@@ -21,54 +21,31 @@ $ docker pull nuitsjp/docker-md2review:1.12
 
 ## 使い方
 
-個別のファイルを指定して変換する方法と、特定フォルダ以下を再帰的に探索し、全てのMarkdownを一括変換する二つの方法があります。
-
-具体的には、次のように実行します。
+次のように実行します。
 
 ### Mac (そして多分Linux）
 
-docker実行時のカレントディレクトリに存在する「README.md」を変換する
+docker実行時のカレントディレクトリに存在する「README.md」を変換する想定です。
 
 ```
 docker run --rm -v `pwd`/.:/work nuitsjp/md2review /bin/sh -c "cd /work && md2review README.md > README.re"
 ```
 
-docker実行時のカレントディレクトリ以下を再帰的に探索し、全てのMarkdownを一括変換する
-
-```
-docker run --rm -v `pwd`/.:/work nuitsjp/md2review /bin/sh -c "cd /work && md2reviews.sh"
-```
-
 ### Windows
 
-#### コマンドプロンプト
+docker実行時のカレントディレクトリに存在する「README.md」を変換する想定です。
 
-docker実行時のカレントディレクトリに存在する「README.md」を変換する
+#### コマンドプロンプト
 
 ```
 docker run --rm -v %cd%:/work nuitsjp/md2review /bin/sh -c "cd /work && md2review README.md > README.re"
 ```
 
-docker実行時のカレントディレクトリ以下を再帰的に探索し、全てのMarkdownを一括変換する
-
-```
-docker run --rm -v %cd%:/work nuitsjp/md2review /bin/sh -c "cd /work && md2reviews.sh"
-```
-
 #### PowerShell
-
-docker実行時のカレントディレクトリに存在する「README.md」を変換する
 
 ```
 docker run --rm -v ${pwd}/.:/work nuitsjp/md2review /bin/sh -c "cd /work && md2review README.md > README.re"
 ```
-
-docker実行時のカレントディレクトリ以下を再帰的に探索し、全てのMarkdownを一括変換する
-
-```
-docker run --rm -v ${pwd}:/work nuitsjp/md2review /bin/sh -c "cd /work && md2reviews.sh"
-```
-
 
 ### インストールされているコンポーネント
 
