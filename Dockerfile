@@ -28,5 +28,6 @@ RUN apt-get update && \
 RUN gem install md2review
 
 COPY md2reviews.sh /usr/local/bin
+RUN chmod +x /usr/local/bin/md2reviews.sh
 
 CMD ["md2review"]
