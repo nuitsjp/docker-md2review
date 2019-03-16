@@ -1,1 +1,0 @@
-docker build -t nuitsjp/md2review .
