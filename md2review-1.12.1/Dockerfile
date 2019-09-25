@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 LABEL maintainer="nuits.jp@live.jp"
 
 # localeを「en_US.UTF-8」に変更する
@@ -25,7 +25,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN gem install md2review -v 1.12.0
+RUN gem install md2review -v 1.12.1
 
 COPY md2reviews.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/md2reviews.sh

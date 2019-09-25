@@ -13,9 +13,9 @@ RUN locale-gen en_US.UTF-8 && update-locale en_US.UTF-8
 
 # build-essentialのインストール
 # md2reviewから利用する
-RUN apt update && \
-    apt install -y build-essential && \
-    apt autoclean && \
+RUN apt-get update && \
+    apt-get install -y build-essential && \
+    apt-get autoclean && \
     rm -rf /var/lib/apt/lists/*
 
 # ruby-devのインストール
