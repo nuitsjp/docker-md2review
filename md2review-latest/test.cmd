@@ -1,1 +1,1 @@
-docker run --rm -v %cd%\..\test:/work nuitsjp/md2review /bin/sh -c "cd /work && md2reviews.sh"
+docker run --rm -v %cd%\..\test:/work nuitsjp/md2review:latest /bin/sh -c "cd /work && md2reviews.sh"

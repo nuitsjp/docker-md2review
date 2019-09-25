@@ -13,10 +13,10 @@
 ### サポートしているタグ
 
 md2reviewのバージョン毎にイメージを作成しています。
-現在存在しているタグは `latest`, `1.12.0` です。
+現在存在しているタグは `latest`, `1.12.0`, `1.12.1` です。
 
 ```
-$ docker pull nuitsjp/md2review:1.12.0
+$ docker pull nuitsjp/md2review:1.12.1
 ```
 
 ## 使い方
